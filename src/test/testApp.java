@@ -1,8 +1,8 @@
-package Diskon;
+package test;
 
 import java.util.Scanner;
 
-public class getDiskon {
+public class testApp {
     public static float HitungHargaDiskon(float input1, float input2) {
 
         float diskon = (input2 / 100) * input1;
@@ -21,6 +21,7 @@ public class getDiskon {
     }
 
     public static void main(String[] args) {
+
         Scanner inputAngka;
         int pilihan;
         float harga, persen;
@@ -48,6 +49,7 @@ public class getDiskon {
         } else {
             System.out.println("Operator tidak tersedia");
         }
+
         inputAngka.close();
     }
 }
