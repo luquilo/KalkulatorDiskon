@@ -46,16 +46,16 @@ public class DiscountCalculator {
             double hargadiskon = (persentaseDiskon / 100) * hargaAwal;
             double hargaSetelahDiskon = hargaAwal - hargadiskon;
 
-            System.out.println("======================================");
+            System.out.println("\n============================================");
             System.out.println("Jumlah Diskon: Rp " + hargadiskon);
             System.out.println("Harga Setelah Diskon: Rp " + hargaSetelahDiskon);
-
-            System.out.print("Apakah Anda ingin mencari diskon lagi? (Y/T): ");
+            System.out.println("\n============================================");
+            System.out.print("Apakah Anda ingin mencari diskon lagi? (y/t): ");
             String input = scanner.next();
 
-            if (input.equalsIgnoreCase("Y")) {
+            if (input.equalsIgnoreCase("y")) {
                 repeat = true;
-            } else if (input.equalsIgnoreCase("T")) {
+            } else if (input.equalsIgnoreCase("t")) {
                 repeat = false;
             } else {
                 System.out.println("Input tidak valid. Mengakhiri program.");
@@ -76,16 +76,16 @@ public class DiscountCalculator {
 
             Double hargaAwal = 100 / (100 - persentaseDiskon) * setelahDiskon;
 
-            System.out.println("======================================");
+            System.out.println("\n============================================");
             System.out.println("Harga Awal Barang: Rp " + hargaAwal);
-            System.out.println("Jumlah Diskon: Rp " + persentaseDiskon);
-
-            System.out.print("Apakah Anda ingin mencari diskon lagi? (Y/T): ");
+            System.out.println("Jumlah Diskon: " + persentaseDiskon + " %");
+            System.out.println("\n============================================");
+            System.out.print("Apakah Anda ingin mencari diskon lagi? (y/t): ");
             String input = scanner.next();
 
-            if (input.equalsIgnoreCase("Y")) {
+            if (input.equalsIgnoreCase("y")) {
                 repeat = true;
-            } else if (input.equalsIgnoreCase("T")) {
+            } else if (input.equalsIgnoreCase("t")) {
                 repeat = false;
             } else {
                 System.out.println("Input tidak valid. Mengakhiri program.");
